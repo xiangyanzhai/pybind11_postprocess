@@ -157,6 +157,7 @@ py::array_t<float> trt_pose_process(py::array_t<float> heatmap_np,py::array_t<fl
             c++;
         }
     }
+   delete[] flag;
    return result;
 }
 
